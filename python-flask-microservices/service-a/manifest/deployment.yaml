@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: service-a
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: service-a
+  template:
+    metadata:
+      labels:
+        app: service-a
+    spec:
+      containers:
+      - name: service-a
+        image: us-central1-docker.pkg.dev/gcp-learning-01-463711/python-flask-microservices/service-a:latest
+        ports:
+        - containerPort: 8080
