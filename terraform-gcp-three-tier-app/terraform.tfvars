@@ -1,0 +1,5 @@
+project_id  = "gcp-learning-01-463711"
+region      = "us-central1"
+zone        = "us-central1-a"
+db_password = "SecurePassword123!"
+environment = "dev"
